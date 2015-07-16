@@ -1,0 +1,40 @@
+{
+  "language": "en",
+  "training_data": [
+    {
+      "text": "There is no data on that subject, only noise. Ask me today: yes. Ask me tomorrow: no. I think both are true at all times during parenthood, just some days one answer is a little more true than others.",
+      "markdown": "There is no data on that subject, only noise. Ask me today: yes. Ask me tomorrow: no. I think both are true at all times during parenthood, just some days one answer is a little more true than others.",
+      "score": 15,
+      "createdUTC": 1436887291,
+      "classes": []
+    },
+    {
+      "text": "Well, just because you're shy doesn't mean you're 100% shy all the time and never try to overcome it.",
+      "markdown": "Well, just because you're shy doesn't mean you're 100% shy all the time and never try to overcome it.",
+      "score": 7,
+      "createdUTC": 1436898027,
+      "classes": []
+    },
+    {
+      "text": "You'd also have to take into account that those who choose to have an abortion are probably more likely to regret having kids if they're forced to (both because they're in circumstances that make them want an abortion, and because being forced to have kids you don't want is probably in and of itself traumatic).\n\nOne way to tackle this is with a regression discontinuity design. That's the approach Diana Foster at UCSF takes. The basic result is that almost no one will say that they regret having their child once it arrives -- you can imagine how psychologically costly that might be! -- but that women forced to bear children do suffer adverse consequences of various sorts.",
+      "markdown": "You'd also have to take into account that those who choose to have an abortion are probably more likely to regret having kids if they're forced to (both because they're in circumstances that make them want an abortion, and because being forced to have kids you don't want is probably in and of itself traumatic).\n\nOne way to tackle this is with a regression discontinuity design. That's the approach Diana Foster at UCSF takes. The [basic result](http://www.nytimes.com/2013/06/16/magazine/study-women-denied-abortions.html) is that almost no one will say that they regret having their child once it arrives -- you can imagine how psychologically costly that might be! -- but that women forced to bear children do suffer adverse consequences of various sorts.",
+      "score": 117,
+      "createdUTC": 1436886439,
+      "classes": []
+    },
+    {
+      "text": "6 percent of people who actively chose to get sterilized regret their decision. But yea I agree with you we shouldn't just ban it. \n\nHere is what a lot of people don't with abortions and sure it only affects certain people but people who miscarry and who need to have a DNC with most insurers this can cost something like 2,000-3,000 in the office if you can not just pass the child out. Plus it is painful.\n\nDNC at the abortion clinic is like 1/8 the cost of some OB/GYN cost. ",
+      "markdown": "6 percent of people who actively chose to get sterilized regret their decision. But yea I agree with you we shouldn't just ban it. \n\nHere is what a lot of people don't with abortions and sure it only affects certain people but people who miscarry and who need to have a DNC with most insurers this can cost something like 2,000-3,000 in the office if you can not just pass the child out. Plus it is painful.\n\nDNC at the abortion clinic is like 1/8 the cost of some OB/GYN cost. ",
+      "score": 14,
+      "createdUTC": 1436889409,
+      "classes": []
+    },
+    {
+      "text": "&gt; The random slope model we fit allowed for individual variability in decision rightness trajectory: some women have lower predicted values of the outcome and others higher values. The typical participant, however, had &gt;99% chance of reporting that the abortion was right for her over three years, and her negative emotions subsided over time. \n\nWe need to give young sexual active women the choice to use birth control for free.",
+      "markdown": "&gt; The random slope model we fit allowed for individual variability in decision rightness trajectory: some women have lower predicted values of the outcome and others higher values. The typical participant, however, had &gt;99% chance of reporting that the abortion was right for her over three years, and her negative emotions subsided over time. \n\nWe need to give young sexual active women the choice to use birth control for free.",
+      "score": 5,
+      "createdUTC": 1436888212,
+      "classes": []
+    }
+  ]
+}

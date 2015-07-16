@@ -1,0 +1,16 @@
+{
+  "name": "language-classifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "get-text.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Liam Kaufman <liam.kaufman@gmail.com> (liamkaufman.com)",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "remove-markdown": "0.0.6",
+    "request": "^2.58.0"
+  }
+}

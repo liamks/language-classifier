@@ -1,0 +1,207 @@
+{
+  "language": "en",
+  "training_data": [
+    {
+      "text": "No one listens to the moderates. They don't make good article head lines, so they don't get 1% of the attention the crazies do. ",
+      "markdown": "No one listens to the moderates. They don't make good article head lines, so they don't get 1% of the attention the crazies do. ",
+      "score": 3,
+      "createdUTC": 1436895699,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "Yeah, considering the immense social pressure around this decision (both ways), I don't know how much weight I'd give to the conclusion. It's unusual to have a life decision that people tell you you shouldn't regret.",
+      "markdown": "Yeah, considering the immense social pressure around this decision (both ways), I don't know how much weight I'd give to the conclusion. It's unusual to have a life decision that people tell you you shouldn't regret.",
+      "score": 6,
+      "createdUTC": 1436898534,
+      "classes": ["informative"]
+    },
+    {
+      "text": "I can't speak for everyone, but honestly it was not a hard decision for me. I am glad I did it whenever I think about it, like right now thinking I could be sitting here with a 4 year old is insane to me. ",
+      "markdown": "I can't speak for everyone, but honestly it was not a hard decision for me. I am glad I did it whenever I think about it, like right now thinking I could be sitting here with a 4 year old is insane to me. ",
+      "score": 3,
+      "createdUTC": 1436920403,
+      "classes": ["self-report"]
+    },
+    {
+      "text": "There was a nicely done study in 2012 looking at over 5,000 women in an abortion clinic (so yes, there is potentially a bit of a sample bias). Essentially, 87% of the women were highly confident of the decision going in. Interestingly, they found that being younger, black, and less educated lowered the degree of confidence. Not surprisingly, having a supportive partner or parent increased confidence. ",
+      "markdown": "There was a [nicely done study](http://onlinelibrary.wiley.com/doi/10.1363/4411712/pdf) in 2012 looking at over 5,000 women in an abortion clinic (so yes, there is potentially a bit of a sample bias). Essentially, 87% of the women were highly confident of the decision going in. Interestingly, they found that being younger, black, and less educated lowered the degree of confidence. Not surprisingly, having a supportive partner or parent increased confidence. ",
+      "score": 161,
+      "createdUTC": 1436880614,
+      "classes": ["informative"]
+    },
+    {
+      "text": "Mom of 2 here. I regret having kids. AMA!",
+      "markdown": "Mom of 2 here. I regret having kids. AMA!",
+      "score": 4,
+      "createdUTC": 1436904780,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "For sure. Everyone is an armchair methodologist when they don't agree with the results. ",
+      "markdown": "For sure. Everyone is an armchair methodologist when they don't agree with the results. ",
+      "score": 20,
+      "createdUTC": 1436884275,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "&gt; So instead of getting abortion banned which will only cause more harm to women, they should be advocating for long term birth control ,like IAD and IUDs, being more available and affordable.\n\nMany of us pro-lifers do, in fact, advocate for long term birth control.",
+      "markdown": "&gt; So instead of getting abortion banned which will only cause more harm to women, they should be advocating for long term birth control ,like IAD and IUDs, being more available and affordable.\n\nMany of us pro-lifers do, in fact, advocate for long term birth control.",
+      "score": 61,
+      "createdUTC": 1436883181,
+      "classes": ["informative"]
+    },
+    {
+      "text": "I just want to make it clear to others that this wasn't my comment. For posterity, this was my response:\n\n&gt;That wasn't what I was talking about, I was talking about the sample bias of it being from a single location. In keeping with your analogy, we are expressly talking about people who go to a sushi bar and have sushi, we aren't interested in people who don't have sushi. You could imagine that for some people this is their first time trying it while others may have had some sushi earlier that day. The top post would posit that the vast majority did not regret the decision to eat sushi afterwards. My comment posits that the majority were looking forward to the sushi going in while a minority were uncertain or maybe even skeptical that they would enjoy it. ",
+      "markdown": "I just want to make it clear to others that this wasn't my comment. For posterity, this was my response:\n\n&gt;That wasn't what I was talking about, I was talking about the sample bias of it being from a single location. In keeping with your analogy, we are expressly talking about people who go to a sushi bar and have sushi, we aren't interested in people who don't have sushi. You could imagine that for some people this is their first time trying it while others may have had some sushi earlier that day. The top post would posit that the vast majority did not regret the decision to eat sushi afterwards. My comment posits that the majority were looking forward to the sushi going in while a minority were uncertain or maybe even skeptical that they would enjoy it. ",
+      "score": 6,
+      "createdUTC": 1436888156,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "There is some data on this, with turnaway patients. 65% said they regretted not getting one. I suspect that numbers are higher for all patients who would have been candidates but never met the turnaway designation because they never tried, for various reasons. ",
+      "markdown": "There is some data on this, with turnaway patients. 65% said they regretted not getting one. I suspect that numbers are higher for all patients who would have been candidates but never met the turnaway designation because they never tried, for various reasons. ",
+      "score": 4,
+      "createdUTC": 1436909508,
+      "classes": ["informative"]
+    },
+    {
+      "text": "&gt; If everyone only got pregnant when they wanted everyone would be happy.\n\nBut since that's not the case, I actually do want abortions.  Any woman who doesn't want to be pregnant should be allowed an abortion.  I want them to occur in that scenario.",
+      "markdown": "&gt; If everyone only got pregnant when they wanted everyone would be happy.\n\nBut since that's not the case, I actually do want abortions.  Any woman who doesn't want to be pregnant should be allowed an abortion.  I want them to occur in that scenario.",
+      "score": 20,
+      "createdUTC": 1436898719,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "&gt;Have there been an analogous study on the amount of people who regret having kids?\n\nMany parents are too afraid to admit that especially Mothers, of fear of how society would look at them.",
+      "markdown": "&gt;Have there been an analogous study on the amount of people who regret having kids?\n\nMany parents are too afraid to admit that especially Mothers, of fear of how society would look at them.",
+      "score": 5,
+      "createdUTC": 1436892056,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "they should do a study on how many women regret not having an abortion ",
+      "markdown": "they should do a study on how many women regret not having an abortion ",
+      "score": 51,
+      "createdUTC": 1436888007,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "I agree, it took my gf and I a month of weighing options and such.  It just wasn't the right time.  For a variety of good reasons.  We will be able to better care for a child in another year or two, keep our standard of living the same as it is now.  Maybe better.  Reasons were monetary, stress, and mental health reasons.  A baby right now probably would have caused us to break up or cause one of us to have a mental breakdown from the stress of coming from a lot of different sources.",
+      "markdown": "I agree, it took my gf and I a month of weighing options and such.  It just wasn't the right time.  For a variety of good reasons.  We will be able to better care for a child in another year or two, keep our standard of living the same as it is now.  Maybe better.  Reasons were monetary, stress, and mental health reasons.  A baby right now probably would have caused us to break up or cause one of us to have a mental breakdown from the stress of coming from a lot of different sources.",
+      "score": 95,
+      "createdUTC": 1436880094,
+      "classes": ["self-report"]
+    },
+    {
+      "text": "I wonder what percentage of women who decide NOT to have an abortion later regret their decision.",
+      "markdown": "I wonder what percentage of women who decide NOT to have an abortion later regret their decision.",
+      "score": 7,
+      "createdUTC": 1436883312,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "I would argue that it's more socially desirable to report regretting an abortion than NOT regretting it. \n\nSocial desirability bias is a thing, for sure, and telephone surveys have that problem more than other methods of data collection (like mail or face to face surveys). But I think you've got the direction wrong, or at least I don't understand why a woman who got an abortion would say she didn't regret it just to report \"the answer they want to show the world\". \n\nAlso, social desirability bias doesn't happen universally. You DO get survey responses from people saying they cheated on their spouse, for example. 95% is pretty damn high for it to be driven solely by a need to present themselves positively.",
+      "markdown": "I would argue that it's more socially desirable to report regretting an abortion than NOT regretting it. \n\nSocial desirability bias is a thing, for sure, and telephone surveys have that problem more than other methods of data collection (like mail or face to face surveys). But I think you've got the direction wrong, or at least I don't understand why a woman who got an abortion would say she didn't regret it just to report \"the answer they want to show the world\". \n\nAlso, social desirability bias doesn't happen universally. You DO get survey responses from people saying they cheated on their spouse, for example. 95% is pretty damn high for it to be driven solely by a need to present themselves positively.",
+      "score": 97,
+      "createdUTC": 1436881597,
+      "classes": ["informative"]
+    },
+    {
+      "text": "I wrote this response to another highly-voted comment that asked a similar question and (for some reason) got nuked (entire thread disappeared):\n\nMy understanding is that women were recruited prospectively: 37.5% of women who were eligible to enroll before having the abortion procedure agreed to participate. Retention rate, on the other hand, might be connected to regret, but it was rather high:\n\n&gt;Among the Near-Limit and First-Trimester Abortion groups, 92% completed six-month interviews, and 69% were retained at three years; 93% completed at least one follow-up interview.\n\nWere the 62% of eligible women who chose not to participate before having an abortion intense regretters? Were the 31% of participants who dropped out before 3 years intense regretters? In the most extreme case, either is possible, and then the 95% figure would dampen a bit. \n\nA more likely scenario is that the non-participants and drop-out participants are slightly biased in one way or another relative to the respondents. There are simple and well-known methods to mitigate this problem (e.g., Call up some of the non-participants and drop-outs, offer them a much larger reward to respond, use their data to infer what the bias was, and re-weight all of your results accordingly... This can be applied recursively until you run out of money or time.). The problem is that this study was run on a pre-existing dataset, so the researchers don't have much opportunity to address those problems.\n\nSo, overall, I'd say the results here are very suggestive with some methodological weaknesses that are typical to survey research but hardly damning.\n\n/ not a survey statistician, but a statistician in other sciences",
+      "markdown": "I wrote this response to another highly-voted comment that asked a similar question and (for some reason) got nuked (entire thread disappeared):\n\nMy understanding is that women were recruited prospectively: 37.5% of women who were eligible to enroll *before having the abortion procedure* agreed to participate. Retention rate, on the other hand, might be connected to regret, but it was rather high:\n\n&gt;Among the Near-Limit and First-Trimester Abortion groups, 92% completed six-month interviews, and 69% were retained at three years; 93% completed at least one follow-up interview.\n\nWere the 62% of eligible women who chose not to participate *before* having an abortion intense regretters? Were the 31% of participants who dropped out before 3 years intense regretters? In the most extreme case, either is possible, and then the 95% figure would dampen a bit. \n\nA more likely scenario is that the non-participants and drop-out participants are slightly biased in one way or another relative to the respondents. There are simple and well-known methods to mitigate this problem (e.g., Call up some of the non-participants and drop-outs, offer them a much larger reward to respond, use their data to infer what the bias was, and re-weight all of your results accordingly... This can be applied recursively until you run out of money or time.). The problem is that this study was run on a pre-existing dataset, so the researchers don't have much opportunity to address those problems.\n\nSo, overall, I'd say the results here are very suggestive with some methodological weaknesses that are typical to survey research but hardly damning.\n\n/ not a survey statistician, but a statistician in other sciences",
+      "score": 271,
+      "createdUTC": 1436898103,
+      "classes": ["informative"]
+    },
+    {
+      "text": "The methodology isn't weak. Participants were recruited in person at clinics and responded to a longitudinal series of surveys. Yes, the surveys were delivered over the phone, but it's not a random phone screen. You can read the method section for free here.",
+      "markdown": "The methodology isn't weak. Participants were recruited in person at clinics and responded to a longitudinal series of surveys. Yes, the surveys were delivered over the phone, but it's not a random phone screen. [You can read the method section for free here.](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0128832#sec006)",
+      "score": 85,
+      "createdUTC": 1436882776,
+      "classes": ["informative"]
+    },
+    {
+      "text": "Nobody actually wants abortions, prevention is better than the cure. If everyone only got pregnant when they wanted everyone would be happy.",
+      "markdown": "Nobody actually wants abortions, prevention is better than the cure. If everyone only got pregnant when they wanted everyone would be happy.",
+      "score": 32,
+      "createdUTC": 1436891859,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "This is similar to my own experience.  What ultimately decided it for me was knowing that if I chose to continue with the pregnancy not only would I have had to drop out of school and move back in with my parents on the other side of the country, I would have had to either lose the love of my life or have forced him to do all of the same as well.  I would have also needed to stop taking the meds that keep me mentally stable, and the idea of going through that much emotional hell while also off meds - it just wasn't an option.",
+      "markdown": "This is similar to my own experience.  What ultimately decided it for me was knowing that if I chose to continue with the pregnancy not only would I have had to drop out of school and move back in with my parents on the other side of the country, I would have had to either lose the love of my life or have forced him to do all of the same as well.  I would have also needed to stop taking the meds that keep me mentally stable, and the idea of going through that much emotional hell while also off meds - it just wasn't an option.",
+      "score": 10,
+      "createdUTC": 1436908507,
+      "classes": ["self-report"]
+    },
+    {
+      "text": "Is there good baseline data on regret?  95% without regret seems high, but confirmation bias probably puts the baseline around 80-90% for any randomly selected, major life decision.",
+      "markdown": "Is there good baseline data on regret?  95% without regret seems high, but confirmation bias probably puts the baseline around 80-90% for any randomly selected, major life decision.",
+      "score": 109,
+      "createdUTC": 1436883631,
+      "classes": ["informative"]
+    }{
+      "text": "Just to add on, you could agree abortion is taking away an innocent life and still be pro-choice. I have a strongly pro-life friend who I has brought up the issue to me. I acknowledged most of her points as being what I agreed with, but I'm still pro-choice from a \"balancing of rights\" perspective.",
+      "markdown": "Just to add on, you could agree abortion is taking away an innocent life and still be pro-choice. I have a strongly pro-life friend who I has brought up the issue to me. I acknowledged most of her points as being what I agreed with, but I'm still pro-choice from a \"balancing of rights\" perspective.",
+      "score": 2,
+      "createdUTC": 1436884261,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "Interesting link. The focal article under discussion in this thread actually excludes the most interesting group in the study, which are people who sought abortion but were turned away. You obviously can't include them in a study about abortion regret, but the data from the \"turned away\" group is really interesting if you look at the references and follow to other studies published from this dataset. ",
+      "markdown": "Interesting link. The focal article under discussion in this thread actually excludes the most interesting group in the study, which are people who sought abortion but were turned away. You obviously can't include them in a study about abortion regret, but the data from the \"turned away\" group is really interesting if you look at the references and follow to other studies published from this dataset. ",
+      "score": 39,
+      "createdUTC": 1436887124,
+      "classes": ["informative"]
+    },
+    {
+      "text": "But then that would mean mandated multiple visits, multiple day waiting periods between the multiple visits, and mandated transvaginal ultrasounds weren't intended to help the poor women who ignorantly decided to get an abortion on a whim before they really knew what they were doing, but instead were intended to chip away at the window of opportunity until it's too late or price the cost of the procedure out of a woman's reach.",
+      "markdown": "But then that would mean mandated multiple visits, multiple day waiting periods between the multiple visits, and mandated transvaginal ultrasounds weren't intended to help the poor women who ignorantly decided to get an abortion on a whim before they really knew what they were doing, but instead were intended to chip away at the window of opportunity until it's too late or price the cost of the procedure out of a woman's reach.",
+      "score": 61,
+      "createdUTC": 1436882148,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "It's important to note that regretting a decision or not has no bearing on whether that decision is horribly painful to make.",
+      "markdown": "It's important to note that regretting a decision or not has no bearing on whether that decision is horribly painful to make.",
+      "score": 4,
+      "createdUTC": 1436905105,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "No surprise. I've never known a woman to make this decision lightly!!!",
+      "markdown": "No surprise. I've never known a woman to make this decision lightly!!!",
+      "score": 8,
+      "createdUTC": 1436917308,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "There was a nicely done study in 2012 looking at over 5,000 women in an abortion clinic (so yes, there is potentially a bit of a sample bias). Essentially, 87% of the women were highly confident of the decision going in. Interestingly, they found that being younger, black, and less educated lowered the degree of confidence. Not surprisingly, having a supportive partner or parent increased confidence. ",
+      "markdown": "There was a [nicely done study](http://onlinelibrary.wiley.com/doi/10.1363/4411712/pdf) in 2012 looking at over 5,000 women in an abortion clinic (so yes, there is potentially a bit of a sample bias). Essentially, 87% of the women were highly confident of the decision going in. Interestingly, they found that being younger, black, and less educated lowered the degree of confidence. Not surprisingly, having a supportive partner or parent increased confidence. ",
+      "score": 161,
+      "createdUTC": 1436880614,
+      "classes": ["informative"]
+    },
+    {
+      "text": "I would argue that it's more socially desirable to report regretting an abortion than NOT regretting it. \n\nSocial desirability bias is a thing, for sure, and telephone surveys have that problem more than other methods of data collection (like mail or face to face surveys). But I think you've got the direction wrong, or at least I don't understand why a woman who got an abortion would say she didn't regret it just to report \"the answer they want to show the world\". \n\nAlso, social desirability bias doesn't happen universally. You DO get survey responses from people saying they cheated on their spouse, for example. 95% is pretty damn high for it to be driven solely by a need to present themselves positively.",
+      "markdown": "I would argue that it's more socially desirable to report regretting an abortion than NOT regretting it. \n\nSocial desirability bias is a thing, for sure, and telephone surveys have that problem more than other methods of data collection (like mail or face to face surveys). But I think you've got the direction wrong, or at least I don't understand why a woman who got an abortion would say she didn't regret it just to report \"the answer they want to show the world\". \n\nAlso, social desirability bias doesn't happen universally. You DO get survey responses from people saying they cheated on their spouse, for example. 95% is pretty damn high for it to be driven solely by a need to present themselves positively.",
+      "score": 97,
+      "createdUTC": 1436881597,
+      "classes": ["informative"]
+    },
+    {
+      "text": "I truly think that the vast majority of women who regret their abortions feel this way because of the society we live in.  the hatred they're subjected to, of course they internalize that. ",
+      "markdown": "I truly think that the vast majority of women who regret their abortions feel this way because of the society we live in.  the hatred they're subjected to, of course they internalize that. ",
+      "score": 4,
+      "createdUTC": 1436925590,
+      "classes": ["non-informative"]
+    },
+    {
+      "text": "It's already started to get bad in Texas.\n\nThe new legislature shut down more than half of the woman's health clinics (not JUST for abortions;  but also for contraceptives) overnight because they didn't meet the demands of the new law.  This law includes things like having a doctor with admitting privileges at a nearby hospital (even though regular, non-'abortion' clinics have no such standard) and wider hallways (requiring that most of these clinics would have to rebuild from scratch in order to stay open)\n\nBecause of this there is already a black market in Misoprostol (one half of the \"abortion\" pill) for Texas woman.  They're smuggling this shit in from Mexico and selling it in Advil bottles at flea markets.  Even though Misoprostol alone is only like 80% effective and could cause birth defects if not taken properly and the baby survives (whereas the FULL 'pill' is 99% effective at terminating pregnancy)\n\nDoesn't matter.  You take away a womans options and they'll find another way.  it's been happening since the dawn of time.  Women have been finding ways (often extraordinarily dangerous ways that harm both themselves and the fetus) to terminate unwanted pregnancies since history began and the only way to stop it is to lock them in a room for their whole pregnancy with a security camera trained on them and an ultrasound every few days to make sure the fetus is still in peak health (and, of course, jailtime for the woman should she miscarry)",
+      "markdown": "[It's already started to get bad in Texas.](http://www.theatlantic.com/health/archive/2014/06/the-rise-of-the-diy-abortion-in-texas/373240/)\n\nThe new legislature shut down more than half of the woman's health clinics (not JUST for abortions;  but also for contraceptives) overnight because they didn't meet the demands of the new law.  This law includes things like having a doctor with admitting privileges at a nearby hospital (even though regular, non-'abortion' clinics have no such standard) and wider hallways (requiring that most of these clinics would have to rebuild from scratch in order to stay open)\n\nBecause of this there is already a black market in Misoprostol (one half of the \"abortion\" pill) for Texas woman.  They're smuggling this shit in from Mexico and selling it in Advil bottles at flea markets.  Even though Misoprostol alone is only like 80% effective and could cause birth defects if not taken properly and the baby survives (whereas the FULL 'pill' is 99% effective at terminating pregnancy)\n\nDoesn't matter.  You take away a womans options and they'll find another way.  it's been happening since the dawn of time.  Women have been finding ways (often extraordinarily dangerous ways that harm both themselves and the fetus) to terminate unwanted pregnancies since history began and the only way to stop it is to lock them in a room for their whole pregnancy with a security camera trained on them and an ultrasound every few days to make sure the fetus is still in peak health (and, of course, jailtime for the woman should she miscarry)",
+      "score": 36,
+      "createdUTC": 1436891137,
+      "classes": ["informative"]
+    },
+  ]
+}
