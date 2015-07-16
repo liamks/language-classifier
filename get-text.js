@@ -4,6 +4,7 @@ var program = require('commander');
 var removeMarkdown = require('remove-markdown');
 
 var MAX_COMMENTS = 100;
+var MAX_CHARACTERS = 1024; // imposed by watson
 var DEFAULT_URL = 'https://www.reddit.com/r/science/comments/3d8wv3/ninetyfive_percent_of_women_who_have_had';
 
 program
@@ -31,6 +32,25 @@ function pickRandomSubset(comments, maxComments){
   return output;
 }
 
+function limitToXCharacters(text){
+  if(text.length < MAX_CHARACTERS){
+    return text;
+  }
+
+  var words = text.split(' ');
+  var numChars = 0;
+  var output = [];
+  var i = 0;
+
+  while(numChars + words[i].length < MAX_CHARACTERS){
+    output.push(words[i]);
+    numChars += words[i].length + 1; // +1 for each space
+    i += 1; 
+  }
+
+  return output.join(' ');
+}
+
 function extractComments(comments){
   var output = [];
   var numDeleted = 0;
@@ -56,11 +76,16 @@ function extractComments(comments){
       return;
     }
 
+    var text = comment.data.body;
+    text = removeMarkdown(text);
+    text = text.replace(/[\n]+/g, ' ').replace('&gt;', ' ');
+    text = limitToXCharacters(text);
+    
     output.push({
-      text: removeMarkdown(comment.data.body),
-      markdown: comment.data.body,
+      text: text,
+      /* markdown: comment.data.body,
       score: comment.data.score,
-      createdUTC: comment.data['created_utc'],
+      createdUTC: comment.data['created_utc'], */
       classes : []
     });
   };

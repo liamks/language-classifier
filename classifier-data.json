@@ -1,0 +1,9 @@
+{
+  "classifier_id": "985630-nlc-65",
+  "name": "",
+  "language": "en",
+  "created": "2015-07-16T23:23:52.124Z",
+  "url": "https://gateway.watsonplatform.net/natural-language-classifier-experimental/api/v1/classifiers/985630-nlc-65",
+  "status": "Training",
+  "status_description": "The classifier instance is in its training phase, not yet ready to accept classify requests"
+}
