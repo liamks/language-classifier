@@ -42,25 +42,38 @@ function trainClassifier(){
 } 
 
 
-function testClassifier(){
-  var testDataPath = program.testData || './data/test.json';
-  var classifierData = require(CLASSIFIER_PATH);
+function classifyText(text){
+  return new Promise(function(resolve, reject){
+    var classifierData = require(CLASSIFIER_PATH);
 
-  var classifier = makeClassifier();
+    var classifier = makeClassifier();
 
-  var params = {
-    classifier: classifierData.classifier_id,
-    text: 'You\'d also have to take into account that those who choose to have an abortion are probably more likely to regret having kids if they\'re forced to (both because they\'re in circumstances that make them want an abortion, and because being forced to have kids you don\'t want is probably in and of itself traumatic).\n\nOne way to tackle this is with a regression discontinuity design. That\'s the approach Diana Foster at UCSF takes. The basic result is that almost no one will say that they regret having their child once it arrives -- you can imagine how psychologically costly that might be! -- but that women forced to bear children do suffer adverse consequences of various sorts.'
-  };
+    var params = {
+      classifier: classifierData.classifier_id,
+      text: text
+    };
 
-  classifier.classify(params, function(err, results){
-    if(err){
-      console.log(err);
-      return;
-    }
+    classifier.classify(params, function(err, results){
+      if(err){
+        return reject(err);
+      }
 
-    console.log(results);
+      resolve(results);
+    });
   });
+}
+
+function testClassifier(){
+  var classifier = makeClassifier();
+  var testDataPath = program.testData || './data/test.json';
+  var testData = require(testDataPath);
+  var promises = [];
+
+  testData.training_data.forEach(function(datum){
+    promises.push(classifyText(datum.text));
+  });
+
+  return Promise.all(promises);
 }
 
 function getStatus() {
@@ -82,7 +95,9 @@ function getStatus() {
 if(program.train){
   trainClassifier();
 } else if(program.test){
-  testClassifier();
+  testClassifier().then(function(results){
+    fs.writeFileSync('./results.json', JSON.stringify(results, null, 2));
+  });
 } else {
   getStatus();
 }

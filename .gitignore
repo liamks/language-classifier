@@ -3,3 +3,4 @@ node_modules
 .DS_Store
 classifier-id.json
 comments.json
+results.json
