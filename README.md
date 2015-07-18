@@ -83,7 +83,17 @@ node classify.js -t -d ./comments-train.json
 
 If all goes well it should create a file called `classifier-data.json`. You'll need this file to use your classifier. 
 
-*PLEASE NOTE: it will take 5 - 15 minutes for IBM to create your classifier*
+*PLEASE NOTE: it will take 5 - 15 minutes for IBM to create your classifier* To see what stage your classifier is at you can run `node classify.js` and it will tell you if it's done yet.
+
+## Testing your classifier.
+
+Finally, to test the accuracy of your classifier run:
+
+```
+node classify.js -x -s ./comments-test.json
+```
+
+It wil output each of the 10 comments with statistical probabilities on which class it belongs to. Values closer to one represent a better match.
 
 
 
