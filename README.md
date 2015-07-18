@@ -55,5 +55,35 @@ Be sure to replace `COMMENTS_URL` with the actual url you found above. The `-m` 
 
 ## Classify comments
 
+Rename your `comments.json` file to `comments-train.json` and create a second file called `comments-test.json`.  Take 10 comments and remove them from `comments-train.json` and put them into `comments-test.json`. Make sure that `comments-test.json` has the same JSON format:
+
+```json
+{
+  "language": "en",
+  "training_data": [
+    {
+      "text": "",
+      "classes": []
+    },
+    {
+      "text": "",
+      "classes": []
+    }
+  ]
+}
+```
+
+Obviously you'll have 10 objects in the `training_data` array. Now open up `comments-train.json` and put the category that each comment belongs to in the comments' `"classes"` array.
+
+Now run the following to create the classifier:
+
+```
+node classify.js -t -d ./comments-train.json
+```
+
+If all goes well it should create a file called `classifier-data.json`. You'll need this file to use your classifier. 
+
+*PLEASE NOTE: it will take 5 - 15 minutes for IBM to create your classifier*
+
 
 
