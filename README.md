@@ -37,5 +37,23 @@ To use Watson you'll need to [register and create a Bluemix account](https://con
 
 ## Getting lots of Reddit comments
 
-In order for your classifier to automatically classify text into categories of your choosing, you'll first need to train it. Training involves first defining categories that you'd like each comment to be classified as. For instance, you could classify comments as "informative" or "non-informative". Likewise you could classify comments as "insulting" or "respective". You can come up with more than two categories, and they don't have to be polar opposites. Next you'll need as many samples as possible (you'll get 50). 40 of the comments you will manually classify into your categories, and the other 10 you will use to see how your trained classifier works automatically. If you have another source of text that you want to use, feel free! Let's get started!
+In order for your classifier to automatically classify text into categories of your choosing, you'll first need to train it. Training involves first defining categories that you'd like each comment to be classified as. For instance, you could classify comments as "informative" or "non-informative". Likewise you could classify comments as "insulting" or "respective". You can come up with more than two categories, and they don't have to be polar opposites. Next you'll need as many samples as possible (you'll get 50). 40 of the comments you will manually classify into your categories, and the other 10 you will use to see how well your trained classifier can automatically classify text. If you have another source of text that you want to use, feel free! Let's get started!
+
+## Install dependencies
+
+Go into the the `lanuage-classifier` folder and run `npm install`.
+
+## Download comments
+
+If you're going to use text from another source (not reddit) skip this step. Find an article on the front-page of reddit. Ideally, it will have 500+ comments, with lots of variety. Once you've selected an article, click on the comments link and then copy the comments url. Next run:
+
+```
+node get-text.js -u COMMENTS_URL -m 50
+```
+
+Be sure to replace `COMMENTS_URL` with the actual url you found above. The `-m` flag tells `get-text.js` to only save 50 comments. To summarize the script will download 500 comments and randomly pick 50 comments to save into `comments.json`.
+
+## Classify comments
+
+
 
