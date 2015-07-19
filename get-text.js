@@ -9,7 +9,7 @@ var DEFAULT_URL = 'https://www.reddit.com/r/science/comments/3d8wv3/ninetyfive_p
 
 program
   .version('0.0.1')
-  .option('-u, --url', 'Specify a url')
+  .option('-u, --url <s>', 'Specify a url')
   .option('-m, --max-comments <n>', 'Number of comments', parseInt)
   .parse(process.argv);
 

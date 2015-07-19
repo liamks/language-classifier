@@ -55,6 +55,16 @@ Be sure to replace `COMMENTS_URL` with the actual url you found above. The `-m` 
 
 ## Classify comments
 
+### Possibilies for Classes (categories)
+
+Classifying comments can be used for (sentiment analysis)[https://en.wikipedia.org/wiki/Sentiment_analysis]. Specifically, you could label a comment as "funny", "kind", "hateful", etc. 
+
+Alternatively, you could use them to label comments in simple categories like "good" or "bad".
+
+### Split your comments
+
+Now you'll split the downloaded comments into 2 files: training data and test data. Training data will be used for creating the classifier, while the test data will be used for testing how well your classifier performs.
+
 Rename your `comments.json` file to `comments-train.json` and create a second file called `comments-test.json`.  Take 10 comments and remove them from `comments-train.json` and put them into `comments-test.json`. Make sure that `comments-test.json` has the same JSON format:
 
 ```json

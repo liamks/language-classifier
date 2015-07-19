@@ -10,8 +10,8 @@ program
   .version('0.0.1')
   .option('-t, --train', 'Train Classifier')
   .option('-x, --test', 'Test Classifier')
-  .option('-d, --train-data', 'Training Data')
-  .option('-s, --test-data', 'Test Data')
+  .option('-d, --train-data <s>', 'Training Data')
+  .option('-s, --test-data <s>', 'Test Data')
   .option('-u, --status', 'Status')
   .parse(process.argv);
 
