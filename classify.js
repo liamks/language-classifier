@@ -2,6 +2,7 @@ var program = require('commander');
 var watson = require('watson-developer-cloud');
 var fs = require('fs');
 var config = require('./config.js');
+var natural = require('natural');
 
 
 var CLASSIFIER_PATH = './classifier-data.json';
@@ -13,6 +14,7 @@ program
   .option('-d, --train-data <s>', 'Training Data')
   .option('-s, --test-data <s>', 'Test Data')
   .option('-u, --status', 'Status')
+  .option('-n, --node', 'Use the "natural" module')
   .parse(process.argv);
 
 function makeClassifier(){
@@ -91,6 +93,44 @@ function getStatus() {
 }
 
 
+function trainAndTestWithNatural(){
+  var trainingData = require(program.trainData || './data/train.json');
+  var testData = require(program.testData || './data/test.json');
+
+  var baysClassifier = new natural.BayesClassifier();
+  var logisticClassifier = new natural.LogisticRegressionClassifier();
+
+  trainingData.training_data.forEach(function(comment){
+    baysClassifier.addDocument(comment.text, comment.classes[0]);
+    logisticClassifier.addDocument(comment.text, comment.classes[0]);
+  });
+
+  baysClassifier.train();
+  logisticClassifier.train();
+
+  var outputBays = [];
+  var outputLogistic = [];
+
+  testData.training_data.forEach(function(comment){
+    outputBays.push({
+      text: comment.text,
+      classes: baysClassifier.getClassifications(comment.text)
+    });
+
+    outputLogistic.push({
+      text: comment.text,
+      classes: logisticClassifier.getClassifications(comment.text)
+    });
+  });
+
+  
+  fs.writeFileSync('./results-bays.json', JSON.stringify(outputBays, null, 2));
+  console.log('Bays Classifier results in: results-bays.json');
+  fs.writeFileSync('./results-logistic.json', JSON.stringify(outputLogistic, null, 2));
+  console.log('Logistic Classifier results in: results-logistic.json');
+}
+
+
 
 if(program.train){
   trainClassifier();
@@ -98,6 +138,8 @@ if(program.train){
   testClassifier().then(function(results){
     fs.writeFileSync('./results.json', JSON.stringify(results, null, 2));
   });
+} else if (program.node){
+  trainAndTestWithNatural()
 } else {
   getStatus();
 }

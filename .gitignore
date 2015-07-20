@@ -4,3 +4,5 @@ node_modules
 classifier-id.json
 comments.json
 results.json
+results-bays.json
+results-logistic.json
