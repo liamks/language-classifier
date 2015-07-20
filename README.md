@@ -61,9 +61,11 @@ Classifying comments can be used for (sentiment analysis)[https://en.wikipedia.o
 
 Alternatively, you could use them to label comments in simple categories like "good" or "bad".
 
+Once you've come up with categories, categorize each of the 50 comments into a single category (Watson supports multiple, but to keep things imple only choose one per comment).
+
 ### Split your comments
 
-Now you'll split the downloaded comments into 2 files: training data and test data. Training data will be used for creating the classifier, while the test data will be used for testing how well your classifier performs.
+Now you'll split the classified comments into 2 files: training data and test data. Training data will be used for creating the classifier, while the test data will be used for testing how well your classifier performs.
 
 Rename your `comments.json` file to `comments-train.json` and create a second file called `comments-test.json`.  Take 10 comments and remove them from `comments-train.json` and put them into `comments-test.json`. Make sure that `comments-test.json` has the same JSON format:
 
@@ -72,12 +74,12 @@ Rename your `comments.json` file to `comments-train.json` and create a second fi
   "language": "en",
   "training_data": [
     {
-      "text": "",
-      "classes": []
+      "text": "a comment here",
+      "classes": ['stupid']
     },
     {
-      "text": "",
-      "classes": []
+      "text": "reddit comment",
+      "classes": ['great']
     }
   ]
 }
@@ -105,5 +107,14 @@ node classify.js -x -s ./comments-test.json
 
 It wil output each of the 10 comments with statistical probabilities on which class it belongs to. Values closer to one represent a better match.
 
+## Compare Watson to NodeJS's Natular Module
 
+Before tying yourself to a 3rd party's service it's good to compare it to open source alternatives. Watson may be significantly better than what's out there, but it's good to check first. To do this we'll use the NPM module named "natural". Specifically, we'll use both it's Bayes and Logistic classifiers. 
 
+To run both classifiers at once simply type:
+
+```
+node classify -n -d ./comments-train.json -s ./comments-test.json
+```
+
+At this point you can compare the outputs of `results-bays.json` and `results-logistics.json` to that of Watson's (`results.json`).
