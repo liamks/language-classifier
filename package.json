@@ -9,6 +9,7 @@
   "author": "Liam Kaufman <liam.kaufman@gmail.com> (liamkaufman.com)",
   "license": "ISC",
   "dependencies": {
+    "cli-table": "^0.3.1",
     "commander": "^2.8.1",
     "natural": "^0.2.1",
     "remove-markdown": "0.0.6",

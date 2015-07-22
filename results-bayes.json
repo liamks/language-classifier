@@ -1,0 +1,87 @@
+[
+  {
+    "text": "There is no data on that subject, only noise. Ask me today: yes. Ask me tomorrow: no. I think both are true at all times during parenthood, just some days one answer is a little more true than others.",
+    "classes": [
+      {
+        "label": "self-report",
+        "value": 4.768371582031241e-8
+      },
+      {
+        "label": "informative",
+        "value": 3.6514060612081144e-11
+      },
+      {
+        "label": "non-informative",
+        "value": 7.892322948361202e-14
+      }
+    ]
+  },
+  {
+    "text": "Well, just because you're shy doesn't mean you're 100% shy all the time and never try to overcome it.",
+    "classes": [
+      {
+        "label": "self-report",
+        "value": 0.00019531249999999996
+      },
+      {
+        "label": "non-informative",
+        "value": 0.000004213991769547328
+      },
+      {
+        "label": "informative",
+        "value": 0.000002872843459657651
+      }
+    ]
+  },
+  {
+    "text": "You'd also have to take into account that those who choose to have an abortion are probably more likely to regret having kids if they're forced to (both because they're in circumstances that make them want an abortion, and because being forced to have kids you don't want is probably in and of itself traumatic).\n\nOne way to tackle this is with a regression discontinuity design. That's the approach Diana Foster at UCSF takes. The basic result is that almost no one will say that they regret having their child once it arrives -- you can imagine how psychologically costly that might be! -- but that women forced to bear children do suffer adverse consequences of various sorts.",
+    "classes": [
+      {
+        "label": "self-report",
+        "value": 7.579122514774429e-15
+      },
+      {
+        "label": "informative",
+        "value": 4.8898383069158295e-20
+      },
+      {
+        "label": "non-informative",
+        "value": 1.2457752304245673e-22
+      }
+    ]
+  },
+  {
+    "text": "6 percent of people who actively chose to get sterilized regret their decision. But yea I agree with you we shouldn't just ban it. \n\nHere is what a lot of people don't with abortions and sure it only affects certain people but people who miscarry and who need to have a DNC with most insurers this can cost something like 2,000-3,000 in the office if you can not just pass the child out. Plus it is painful.\n\nDNC at the abortion clinic is like 1/8 the cost of some OB/GYN cost. ",
+    "classes": [
+      {
+        "label": "self-report",
+        "value": 6.984919309616085e-11
+      },
+      {
+        "label": "informative",
+        "value": 1.767555066029618e-14
+      },
+      {
+        "label": "non-informative",
+        "value": 3.9909820736404106e-18
+      }
+    ]
+  },
+  {
+    "text": "&gt; The random slope model we fit allowed for individual variability in decision rightness trajectory: some women have lower predicted values of the outcome and others higher values. The typical participant, however, had &gt;99% chance of reporting that the abortion was right for her over three years, and her negative emotions subsided over time. \n\nWe need to give young sexual active women the choice to use birth control for free.",
+    "classes": [
+      {
+        "label": "self-report",
+        "value": 6.821210263296982e-14
+      },
+      {
+        "label": "informative",
+        "value": 6.876335119100429e-21
+      },
+      {
+        "label": "non-informative",
+        "value": 2.534536194711431e-26
+      }
+    ]
+  }
+]

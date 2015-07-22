@@ -3,6 +3,7 @@ var watson = require('watson-developer-cloud');
 var fs = require('fs');
 var config = require('./config.js');
 var natural = require('natural');
+var Table = require('cli-table');
 
 
 var CLASSIFIER_PATH = './classifier-data.json';
@@ -15,6 +16,7 @@ program
   .option('-s, --test-data <s>', 'Test Data')
   .option('-u, --status', 'Status')
   .option('-n, --node', 'Use the "natural" module')
+  .option('-r, --results', 'Compare results')
   .parse(process.argv);
 
 function makeClassifier(){
@@ -97,24 +99,24 @@ function trainAndTestWithNatural(){
   var trainingData = require(program.trainData || './data/train.json');
   var testData = require(program.testData || './data/test.json');
 
-  var baysClassifier = new natural.BayesClassifier();
+  var bayesClassifier = new natural.BayesClassifier();
   var logisticClassifier = new natural.LogisticRegressionClassifier();
 
   trainingData.training_data.forEach(function(comment){
-    baysClassifier.addDocument(comment.text, comment.classes[0]);
+    bayesClassifier.addDocument(comment.text, comment.classes[0]);
     logisticClassifier.addDocument(comment.text, comment.classes[0]);
   });
 
-  baysClassifier.train();
+  bayesClassifier.train();
   logisticClassifier.train();
 
-  var outputBays = [];
+  var outputBayes = [];
   var outputLogistic = [];
 
   testData.training_data.forEach(function(comment){
-    outputBays.push({
+    outputBayes.push({
       text: comment.text,
-      classes: baysClassifier.getClassifications(comment.text)
+      classes: bayesClassifier.getClassifications(comment.text)
     });
 
     outputLogistic.push({
@@ -124,12 +126,44 @@ function trainAndTestWithNatural(){
   });
 
   
-  fs.writeFileSync('./results-bays.json', JSON.stringify(outputBays, null, 2));
-  console.log('Bays Classifier results in: results-bays.json');
+  fs.writeFileSync('./results-bayes.json', JSON.stringify(outputBayes, null, 2));
+  console.log('Bayes Classifier results in: results-bayes.json');
   fs.writeFileSync('./results-logistic.json', JSON.stringify(outputLogistic, null, 2));
   console.log('Logistic Classifier results in: results-logistic.json');
 }
 
+function reportAccuracy(){
+  var testData = require(program.testData || './data/test.json');
+  var watsonResults = require('./results.json');
+  var bayesResults = require('./results-bayes.json');
+  var logisticResults = require('./results-logistic.json');
+  var watsonAccuracy = 0;
+  var bayesAccuracy = 0;
+  var logisticAccuracy = 0;
+  var correctClass;
+  var n = testData.training_data.length;
+
+  testData.training_data.forEach(function(comment, i){
+    correctClass = comment.classes[0];
+    watsonAccuracy += correctClass === watsonResults[i].classes[0].class_name ? 1 : 0;
+    bayesAccuracy += correctClass === bayesResults[i].classes[0].label ? 1 : 0;
+    logisticAccuracy += correctClass === logisticResults[i].classes[0].label ? 1 : 0;
+  });
+
+  function percent(n){
+    return (n * 100).toPrecision(4) + '%';
+  }
+
+  var accuracy = [percent(watsonAccuracy/n), percent(bayesAccuracy/n), percent(logisticAccuracy/n)];
+
+  var table = new Table({
+    head: ['Watson', 'Bayes', 'Logistic']
+  });
+
+  table.push(accuracy);
+
+  console.log(table.toString());
+}
 
 
 if(program.train){
@@ -139,7 +173,9 @@ if(program.train){
     fs.writeFileSync('./results.json', JSON.stringify(results, null, 2));
   });
 } else if (program.node){
-  trainAndTestWithNatural()
+  trainAndTestWithNatural();
+} else if (program.results){
+  reportAccuracy();
 } else {
   getStatus();
 }
