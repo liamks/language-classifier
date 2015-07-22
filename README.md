@@ -117,4 +117,16 @@ To run both classifiers at once simply type:
 node classify -n -d ./comments-train.json -s ./comments-test.json
 ```
 
-At this point you can compare the outputs of `results-bays.json` and `results-logistics.json` to that of Watson's (`results.json`).
+At this point you can compare the outputs of `results-bayes.json` and `results-logistics.json` to that of Watson's (`results.json`).
+
+## Compare the accuracy of each classifier
+
+Assuming you have 3 results (watson, bayes & logistic) you can run `node classify -r -s ./comments-test.json` which should produce something like:
+
+```
+┌────────┬────────┬──────────┐
+│ Watson │ Bayes  │ Logistic │
+├────────┼────────┼──────────┤
+│ 60.00% │ 0.000% │ 40.00%   │
+└────────┴────────┴──────────┘
+```
