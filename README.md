@@ -75,11 +75,11 @@ Rename your `comments.json` file to `comments-train.json` and create a second fi
   "training_data": [
     {
       "text": "a comment here",
-      "classes": ['stupid']
+      "classes": ["stupid"]
     },
     {
       "text": "reddit comment",
-      "classes": ['great']
+      "classes": ["great"]
     }
   ]
 }
@@ -107,7 +107,7 @@ node classify.js -x -s ./comments-test.json
 
 It wil output each of the 10 comments with statistical probabilities on which class it belongs to. Values closer to one represent a better match.
 
-## Compare Watson to NodeJS's Natular Module
+## Compare Watson to NodeJS's Natural Module
 
 Before tying yourself to a 3rd party's service it's good to compare it to open source alternatives. Watson may be significantly better than what's out there, but it's good to check first. To do this we'll use the NPM module named "natural". Specifically, we'll use both it's Bayes and Logistic classifiers. 
 
